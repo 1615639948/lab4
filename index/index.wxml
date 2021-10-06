@@ -1,0 +1,51 @@
+
+<view class="root">
+  <image class='background-image' src='图片 Copy 2@1x.png' mode="aspectFill"></image>
+  <view class="content" style="width: 750rpx; height: 1464rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+  
+  
+  
+    <image
+      style="position: relative; left: 464rpx; top: 415rpx; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box"
+      src="图片 3 Copy 2@1x.png" />
+  
+    <image
+      style="position: relative; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box; left: -135rpx; top: 687rpx"
+      src="图片 3 Copy 2@1x.png" />
+  
+    <image
+      style="position: relative; left: 48rpx; top: 952rpx; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box"
+      src="图片 3 Copy 2@1x.png" />
+  
+  
+  
+  
+  
+    <image
+      style="position: relative; left: 220rpx; top: -33rpx; width: 296rpx; height: 144rpx; display: inline-block; box-sizing: border-box"
+      src="\G_(]12)HSP0CR{]]WG]MKOK.png" />
+  
+  
+  
+  
+  
+    <button
+      style="position: relative; left: 193rpx; top: 73rpx; width: 136rpx; height: 211rpx; display: block; box-sizing: border-box"
+      plain="{{ true }}">创建房间</button>
+  
+    <button
+      style="position: relative; left: -197rpx; top: 77rpx; width: 133rpx; height: 299rpx; display: block; box-sizing: border-box"
+      plain="{{ true }}">快速加入游戏</button>
+  
+    <button style="position: relative; left: 196rpx; top: 68rpx; width: 129rpx; height: 249rpx; display: block; box-sizing: border-box" plain="{{ true }}">单机游戏</button>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
