@@ -1,4 +1,4 @@
-// stand_alone_game/stand_alone_game.js
+// rule/rule.js
 Page({
 
   /**
@@ -8,11 +8,6 @@ Page({
 
   },
 
-  to_index(){
-    wx.navigateTo({
-      url: '../index/index',
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -2,14 +2,16 @@
   "pages": [
     "index/index",
     "home_name/home_name",
-    "stand_alone_game/stand_alone_game"
+    "stand_alone_game/stand_alone_game",
+    "rule/rule"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#D53e37",
+    "navigationBarTitleText": "博饼游戏",
+    "navigationBarTextStyle": "white"
   },
+  
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

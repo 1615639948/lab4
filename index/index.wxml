@@ -1,44 +1,57 @@
 
 <view class="root">
-  <image class='background-image' src='图片 Copy 2@1x.png' mode="aspectFill"></image>
-  <view class="content" style="width: 750rpx; height: 1464rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+  <image class='background-image' src='background.png' mode="aspectFill"></image>
+  <view class="content"
+    style="width: 750rpx; height: 1464rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx; position: absolute">
   
   
   
     <image
-      style="position: relative; left: 260rpx; top: 481rpx; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box"
-      src="图片 3 Copy 2@1x.png" />
-  
-    
-  
-    <image
-      style="position: relative; left: 50rpx; top: 885rpx; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box"
-      src="图片 3 Copy 2@1x.png" />
-  
-  
+      style="position: relative; left: 260rpx; top: 341rpx; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box"
+      src="moon.png" />
   
   
   
     <image
-      style="position: relative; left: -166rpx; top: 120rpx; width: 296rpx; height: 144rpx; display: inline-block; box-sizing: border-box"
-      src="\G_(]12)HSP0CR{]]WG]MKOK.png" />
+      style="position: relative; left: 47rpx; top: 706rpx; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box"
+      src="moon.png" />
+  
+  
+  
+  
+  
+    <image
+      style="position: relative; left: -209rpx; top: 87rpx; width: 296rpx; height: 144rpx; display: inline-block; box-sizing: border-box"
+      src="title.png" />
   
   
   
   
   
     <button
-      style="position: relative; left: -11rpx; top: 276rpx; width: 136rpx; height: 211rpx; display: block; box-sizing: border-box"
-       bindtap="to_home_name"
-      plain="{{ true }}">多人游戏</button>
-      
-      
-    
+      style="position: relative; left: -14rpx; top: 149rpx; width: 136rpx; height: 211rpx; display: block; box-sizing: border-box"
+      bindtap="to_home_name" plain="{{ true }}">多人游戏</button>
   
-    <button style="position: relative; left: -12rpx; top: 451rpx; width: 129rpx; height: 249rpx; display: block; box-sizing: border-box" 
-      bindtap="to_StandAloneGame"
-    plain="{{ true }}">单机游戏</button>
+  
+  
+  
+    <button
+      style="position: relative; left: -18rpx; top: 271rpx; width: 129rpx; height: 249rpx; display: block; box-sizing: border-box"
+      bindtap="to_StandAloneGame" plain="{{ true }}">单机游戏</button>
+  
+  
+  
+    <image
+      style="position: relative; left: 251rpx; top: 451rpx; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box"
+      src="moon.png" />
+  
+    <button style="position: relative; left: -17rpx; top: 228rpx; width: 125rpx; height: 245rpx; display: block; box-sizing: border-box" 
+    bindtap="to_rule"plain="{{ true }}">博饼规则</button>
     </view>
+
+
+
+
 </view>
 
 

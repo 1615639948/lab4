@@ -1,0 +1,13 @@
+<view class="root">
+  <image class='background-image' src='background.png' mode="aspectFill"></image>
+  <view class="content" style="position:relative;">
+  
+  
+    <image
+      style="position: relative; left: 44rpx; top: 289rpx; width: 667rpx; height: 950rpx; display: inline-block; box-sizing: border-box"
+      src="rule.png" />
+  
+    <image style="position: relative; left: 228rpx; top: -843rpx; width: 299rpx; height: 131rpx; display: inline-block; box-sizing: border-box"
+      src="title.png" />
+  </view>
+</view>
