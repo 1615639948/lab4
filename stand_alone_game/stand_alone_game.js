@@ -13,6 +13,13 @@ Page({
       url: '../index/index',
     })
   },
+
+  to_random(){
+    wx.navigateTo({
+      url: '../random/random',
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */

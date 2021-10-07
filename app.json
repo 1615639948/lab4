@@ -1,15 +1,18 @@
 {
   "pages": [
+    
     "index/index",
     "home_name/home_name",
     "stand_alone_game/stand_alone_game",
-    "rule/rule"
+    "rule/rule",
+    "random/random"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#D53e37",
     "navigationBarTitleText": "博饼游戏",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true  
   },
   
   "style": "v2",

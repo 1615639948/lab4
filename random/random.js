@@ -1,16 +1,20 @@
-// rule/rule.js
+// random/random.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    a:Math.floor(Math.random() * 6) + 1,
+    b:Math.floor(Math.random() * 6) + 1,
+    c:Math.floor(Math.random() * 6) + 1,
+    d:Math.floor(Math.random() * 6) + 1,
+    e:Math.floor(Math.random() * 6) + 1,
+    f:Math.floor(Math.random() * 6) + 1,
   },
-  to_index(){
-    wx.navigateTo({
-      url: '../index/index',
-    })
+
+  RandomNumber(){
+   var a =  Math.floor(Math.random() * 6) + 1;
   },
   /**
    * 生命周期函数--监听页面加载

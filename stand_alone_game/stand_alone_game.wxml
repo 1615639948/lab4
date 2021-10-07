@@ -36,15 +36,14 @@
       style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: 216rpx; top: -156rpx"
       src="action.gif" />
   
-    <button style="position: relative; left: -4rpx; top: 4rpx" plain="{{ true }}">摇骰子</button>
+    <button style="position: relative; left: -4rpx; top: 4rpx" 
+    bindtap="to_random" plain="{{ true }}">摇骰子</button>
   
     <button
       style="position: relative; left: -9rpx; top: 446rpx; width: 231rpx; height: 73rpx; display: block; box-sizing: border-box"
       bindtap="to_index" plain="{{ true }}">返回首页</button>
   
-  
-  
-    
+
   </view>
 <image src="action.gif" 
       style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: -323rpx; top: -173rpx"
