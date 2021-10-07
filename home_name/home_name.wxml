@@ -1,5 +1,10 @@
 <view class="root">
   <image class='background-image' src='图片 Copy 2@1x.png' mode="aspectFill"></image>
   <view class="content" style="position:relative;">
+  
+  
+  
+    <image style="position: relative; left: 89rpx; top: 443rpx"
+      src="QQ图片20211007114737.png" />
   </view>
 </view>

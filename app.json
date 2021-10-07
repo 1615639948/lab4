@@ -1,7 +1,8 @@
 {
   "pages": [
     "index/index",
-    "home_name/home_name"
+    "home_name/home_name",
+    "stand_alone_game/stand_alone_game"
   ],
   "window": {
     "backgroundTextStyle": "light",

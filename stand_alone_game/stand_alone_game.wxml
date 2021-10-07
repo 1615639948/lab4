@@ -1,0 +1,50 @@
+<view class="root">
+  <image class='background-image' src='图片 Copy 2@1x.png' mode="aspectFill"></image>
+  <view class="content" style="position:relative;">
+  
+    <image
+      style="position: relative; left: 223rpx; top: 160rpx; width: 298rpx; height: 111rpx; display: inline-block; box-sizing: border-box"
+      src="QQ图片20211007140759.png" />
+  
+    <image
+      style="position: relative; left: 82rpx; top: 247rpx; width: 580rpx; height: 600rpx; display: inline-block; box-sizing: border-box"
+      src="图片 2 Copy@1x.png" />
+  
+  
+  
+    <image
+      style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: -357rpx; top: -173rpx"
+      src="QQ图片20211007143240.gif" />
+  
+    <image src="QQ图片20211007143240.gif"
+      style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: -323rpx; top: -173rpx" />
+  
+    <image
+      style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: 444rpx; top: -256rpx"
+      src="QQ图片20211007143240.gif" />
+  
+    <image
+      style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: 147rpx; top: -156rpx"
+      src="QQ图片20211007143240.gif" />
+  
+    <image
+      style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: 182rpx; top: -156rpx"
+      src="QQ图片20211007143240.gif" />
+  
+    <image
+      style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: 216rpx; top: -156rpx"
+      src="QQ图片20211007143240.gif" />
+  
+    <button style="position: relative; left: -4rpx; top: 4rpx">摇骰子</button>
+  </view>
+<image src="QQ图片20211007143240.gif" 
+      style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: -323rpx; top: -173rpx"
+      />
+
+<image src="QQ图片20211007143240.gif" 
+      style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: -323rpx; top: -173rpx"
+      />
+
+
+
+</view>

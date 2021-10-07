@@ -6,15 +6,13 @@
   
   
     <image
-      style="position: relative; left: 464rpx; top: 415rpx; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box"
+      style="position: relative; left: 260rpx; top: 481rpx; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box"
       src="图片 3 Copy 2@1x.png" />
   
-    <image
-      style="position: relative; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box; left: -135rpx; top: 687rpx"
-      src="图片 3 Copy 2@1x.png" />
+    
   
     <image
-      style="position: relative; left: 48rpx; top: 952rpx; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box"
+      style="position: relative; left: 50rpx; top: 885rpx; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box"
       src="图片 3 Copy 2@1x.png" />
   
   
@@ -22,7 +20,7 @@
   
   
     <image
-      style="position: relative; left: 220rpx; top: -33rpx; width: 296rpx; height: 144rpx; display: inline-block; box-sizing: border-box"
+      style="position: relative; left: -166rpx; top: 120rpx; width: 296rpx; height: 144rpx; display: inline-block; box-sizing: border-box"
       src="\G_(]12)HSP0CR{]]WG]MKOK.png" />
   
   
@@ -30,16 +28,16 @@
   
   
     <button
-      style="position: relative; left: 193rpx; top: 73rpx; width: 136rpx; height: 211rpx; display: block; box-sizing: border-box"
-       bindtap="to"
-      plain="{{ true }}">创建房间</button>
+      style="position: relative; left: -11rpx; top: 276rpx; width: 136rpx; height: 211rpx; display: block; box-sizing: border-box"
+       bindtap="to_home_name"
+      plain="{{ true }}">多人游戏</button>
       
       
-    <button
-      style="position: relative; left: -197rpx; top: 77rpx; width: 133rpx; height: 299rpx; display: block; box-sizing: border-box"
-      plain="{{ true }}">快速加入游戏</button>
+    
   
-    <button style="position: relative; left: 196rpx; top: 68rpx; width: 129rpx; height: 249rpx; display: block; box-sizing: border-box" plain="{{ true }}">单机游戏</button>
+    <button style="position: relative; left: -12rpx; top: 451rpx; width: 129rpx; height: 249rpx; display: block; box-sizing: border-box" 
+      bindtap="to_StandAloneGame"
+    plain="{{ true }}">单机游戏</button>
     </view>
 </view>
 

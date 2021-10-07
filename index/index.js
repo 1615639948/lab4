@@ -4,9 +4,14 @@ Page({
   data: {
 
   },
-  to(){
+  to_home_name(){
     wx.navigateTo({
       url: '../home_name/home_name',
+    })
+  },
+  to_StandAloneGame(){
+    wx.navigateTo({
+      url: '../stand_alone_game/stand_alone_game',
     })
   },
   onLoad() {
