@@ -11,11 +11,14 @@ Page({
     d:Math.floor(Math.random() * 6) + 1,
     e:Math.floor(Math.random() * 6) + 1,
     f:Math.floor(Math.random() * 6) + 1,
+    one_num:0,
+    two_num:0,
+    three_num:0,
+    four_num:0,
+    five_num:0,
+    six_num:0,
   },
 
-  RandomNumber(){
-   var a =  Math.floor(Math.random() * 6) + 1;
-  },
   /**
    * 生命周期函数--监听页面加载
    */
