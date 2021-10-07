@@ -46,15 +46,35 @@
       style="position: relative; left: 251rpx; top: 451rpx; width: 209rpx; height: 185rpx; display: inline-block; box-sizing: border-box"
       src="moon.png" />
   
-    <button style="position: relative; left: -17rpx; top: 228rpx; width: 125rpx; height: 245rpx; display: block; box-sizing: border-box" 
-    bindtap="to_rule"plain="{{ true }}">博饼规则</button>
-
+    <button
+      style="position: relative; left: -17rpx; top: 228rpx; width: 125rpx; height: 245rpx; display: block; box-sizing: border-box"
+      bindtap="to_rule" plain="{{ true }}">博饼规则</button>
+  
+  
+  
     
     </view>
     <block wx:if="{{muti == 1}}">
-      <view class="mask">
-        <view class= "eject">
-        <text>{{1}}</text>
+      <view class="mask" >
+        <view class= "eject" >
+
+
+          <view class= "Input1">
+            <input  type="text" placeholder="请输入房间人数（<6）" placeholder-style="color:#FF0000" bindinput= 'Input_1'></input>
+          </view>
+
+          <view class= "Input2">
+            <input  type="text" placeholder="请设置房间密码" placeholder-style="color:#FF0000" bindinput= 'Input_2'></input>
+          </view>
+
+          <view class= "Input3">
+            <input  type="text" placeholder="请输入房间账号" placeholder-style="color:#FF0000" bindinput= 'Input_3' ></input>
+          </view>
+
+          <button class="goback" bindtap="Go_Back" size="mini" type="default">取消</button>
+
+          <button class="create" bindtap="Creat" size="mini" type="primary">创建</button>
+          
         </view>
       </view>
       
