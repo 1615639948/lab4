@@ -1,5 +1,6 @@
 
 <view class="root">
+  
   <image class='background-image' src='background.png' mode="aspectFill"></image>
   <view class="content"
     style="width: 750rpx; height: 1464rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx; position: absolute">
@@ -47,9 +48,18 @@
   
     <button style="position: relative; left: -17rpx; top: 228rpx; width: 125rpx; height: 245rpx; display: block; box-sizing: border-box" 
     bindtap="to_rule"plain="{{ true }}">博饼规则</button>
+
+    
     </view>
-
-
+    <block wx:if="{{muti == 1}}">
+      <view class="mask">
+        <view class= "eject">
+        <text>{{1}}</text>
+        </view>
+      </view>
+      
+    </block>
+  
 
 
 </view>
