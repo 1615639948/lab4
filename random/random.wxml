@@ -1,0 +1,199 @@
+<view class="root">
+  <image class='background-image' src='b.png' mode="aspectFill"></image>
+  <view class="content"
+    style="width: 750rpx; height: 1464rpx; display: block; box-sizing: border-box; left: 0rpx; top: -31rpx; position: absolute">
+    <view wx:if="{{a === 1}}">
+      <image
+      style="position: relative; left: 107rpx; top: 551rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="one.png" />
+    </view>
+    <view wx:if="{{a === 2}}">
+      <image
+      style="position: relative; left: 107rpx; top: 551rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="two.png" />
+    </view>
+    <view wx:if="{{a === 3}}">
+      <image
+      style="position: relative; left: 107rpx; top: 551rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="three.png" />
+    </view>
+    <view wx:if="{{a === 4}}">
+      <image
+      style="position: relative; left: 107rpx; top: 551rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="four.png" />
+    </view>
+    <view wx:if="{{a === 5}}">
+      <image
+      style="position: relative; left: 107rpx; top: 551rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="five.png" />
+    </view>
+    <view wx:if="{{a === 6}}">
+      <image
+      style="position: relative; left: 107rpx; top: 551rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="six.png" />
+    </view>
+  
+    <view wx:if="{{b === 1}}">
+      <image
+      style="position: relative; left: 328rpx; top: 412rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="one.png" />
+    </view>
+    <view wx:if="{{b === 2}}">
+      <image
+      style="position: relative; left: 328rpx; top: 412rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="two.png" />
+    </view>
+    <view wx:if="{{b === 3}}">
+      <image
+      style="position: relative; left: 328rpx; top: 412rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="three.png" />
+    </view>
+    <view wx:if="{{b === 4}}">
+      <image
+      style="position: relative; left: 328rpx; top: 412rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="four.png" />
+    </view>
+    <view wx:if="{{b === 5}}">
+      <image
+      style="position: relative; left: 328rpx; top: 412rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="five.png" />
+    </view>
+    <view wx:if="{{b === 6}}">
+      <image
+      style="position: relative; left: 328rpx; top: 412rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="six.png" />
+    </view>
+
+
+    <view wx:if="{{c === 1}}">
+      <image
+      style="position: relative; left: 539rpx; top: 285rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="one.png" />
+    </view>
+    <view wx:if="{{c === 2}}">
+      <image
+      style="position: relative; left: 539rpx; top: 285rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="two.png" />
+    </view>
+    <view wx:if="{{c === 3}}">
+      <image
+      style="position: relative; left: 539rpx; top: 285rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="three.png" />
+    </view>
+    <view wx:if="{{c === 4}}">
+      <image
+      style="position: relative; left: 539rpx; top: 285rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="four.png" />
+    </view>
+    <view wx:if="{{c === 5}}">
+      <image
+      style="position: relative; left: 539rpx; top: 285rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="five.png" />
+    </view>
+    <view wx:if="{{c === 6}}">
+      <image
+      style="position: relative; left: 539rpx; top: 285rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="six.png" />
+    </view>
+
+
+    <view wx:if="{{d === 1}}">
+      <image
+      style="position: relative; left: 86rpx; top: 466rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="one.png" />
+    </view>
+    <view wx:if="{{d === 2}}">
+      <image
+      style="position: relative; left: 86rpx; top: 466rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="two.png" />
+    </view>
+    <view wx:if="{{d === 3}}">
+      <image
+      style="position: relative; left: 86rpx; top: 466rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="three.png" />
+    </view>
+    <view wx:if="{{d === 4}}">
+      <image
+      style="position: relative; left: 86rpx; top: 466rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="four.png" />
+    </view>
+    <view wx:if="{{d === 5}}">
+      <image
+      style="position: relative; left: 86rpx; top: 466rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="five.png" />
+    </view>
+    <view wx:if="{{d === 6}}">
+      <image
+      style="position: relative; left: 86rpx; top: 466rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="six.png" />
+    </view>
+
+
+
+    <view wx:if="{{e === 1}}">
+      <image
+      style="position: relative; left: 313rpx; top: 350rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="one.png" />
+    </view>
+    <view wx:if="{{e === 2}}">
+      <image
+      style="position: relative; left: 313rpx; top: 350rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="two.png" />
+    </view>
+    <view wx:if="{{e === 3}}">
+      <image
+      style="position: relative; left: 313rpx; top: 350rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="three.png" />
+    </view>
+    <view wx:if="{{e === 4}}">
+      <image
+      style="position: relative; left: 313rpx; top: 350rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="four.png" />
+    </view>
+    <view wx:if="{{e === 5}}">
+      <image
+      style="position: relative; left: 313rpx; top: 350rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="five.png" />
+    </view>
+    <view wx:if="{{e === 6}}">
+      <image
+      style="position: relative; left: 313rpx; top: 350rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="six.png" />
+    </view>
+
+    
+  
+    <view wx:if="{{e === 1}}">
+      <image
+      style="position: relative; left: 529rpx; top: 207rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="one.png" />
+    </view>
+    <view wx:if="{{e === 2}}">
+      <image
+      style="position: relative; left: 529rpx; top: 207rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="two.png" />
+    </view>
+    <view wx:if="{{e === 3}}">
+      <image
+      style="position: relative; left: 529rpx; top: 207rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="three.png" />
+    </view>
+    <view wx:if="{{e === 4}}">
+      <image
+      style="position: relative; left: 529rpx; top: 207rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="four.png" />
+    </view>
+    <view wx:if="{{e === 5}}">
+      <image
+      style="position: relative; left: 529rpx; top: 207rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="five.png" />
+    </view>
+    <view wx:if="{{e === 6}}">
+      <image
+      style="position: relative; left: 529rpx; top: 207rpx; width: 125rpx; height: 125rpx; display: inline-block; box-sizing: border-box"
+      src="six.png" />
+    </view>
+    
+  </view>
+</view>
+
