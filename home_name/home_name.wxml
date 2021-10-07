@@ -1,0 +1,5 @@
+<view class="root">
+  <image class='background-image' src='图片 Copy 2@1x.png' mode="aspectFill"></image>
+  <view class="content" style="position:relative;">
+  </view>
+</view>

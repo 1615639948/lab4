@@ -31,8 +31,10 @@
   
     <button
       style="position: relative; left: 193rpx; top: 73rpx; width: 136rpx; height: 211rpx; display: block; box-sizing: border-box"
+       bindtap="to"
       plain="{{ true }}">创建房间</button>
-  
+      
+      
     <button
       style="position: relative; left: -197rpx; top: 77rpx; width: 133rpx; height: 299rpx; display: block; box-sizing: border-box"
       plain="{{ true }}">快速加入游戏</button>
