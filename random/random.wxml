@@ -245,6 +245,10 @@
     <view wx:if="{{four === 0 && one < 4 && two < 4 && four < 4 && five < 4 && six < 4 && three < 4}}">
       <text class='text' style="position: relative; left: 111rpx; top: -1104rpx">谢谢参与</text>
     </view>
+
+    <view>{{a1}}</view>
+    <view>{{b1}}</view>
+
   </view>
 </view>
 
