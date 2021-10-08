@@ -32,7 +32,7 @@ page{
   display: flex; 
   box-sizing: border-box
 }
-.text{
+.text1{
   position: fixed; 
   left: 35%  ;
   top : 70%; 
@@ -40,4 +40,10 @@ page{
   height: 70rpx; 
   display: flex; 
   box-sizing: border-box
+}
+
+.text{
+  display: inline-block;
+  font-size: 70pX;
+  padding: 2pX;
 }

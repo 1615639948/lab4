@@ -69,7 +69,7 @@
       
     </view>
     <button class="butt" size="mini" type="primary"  bindtap="reload" > 再骰一次 </button>
-    <view class="text">
+    <view class="text1">
       <text>还剩下：</text>
       <text>{{count}}</text>
     </view>
@@ -206,9 +206,46 @@
       src="six.png" />
     </view>
 
-    <text style="position: relative; left: 57rpx; top: -326rpx">{{one}}{{two}}{{three}}{{four}}{{five}}{{six}}</text>
+    <view wx:if="{{four === 1 && one + two + three + four + five + six !== 21 && one < 4 && two < 4 && three < 4 && five < 4 && six < 4}}">
+      <text class='text' style="position: relative; left: 222rpx; top: -1113rpx">一秀</text>
+    </view>
+    <view wx:if="{{four === 2 && one < 4 && two < 4 && three < 4 && five < 4 && six < 4}}">
+      <text class='text' style="position: relative; left: 222rpx; top: -1113rpx">二举</text>
+    </view>
+    <view wx:if="{{four === 3}}">
+      <text class='text' style="position: relative; left: 222rpx; top: -1113rpx">三红</text>
+    </view>
+    <view wx:if="{{two === 4|| three === 4 || one === 4|| five === 4 || six===4}}">
+      <text class='text' style="position: relative; left: 222rpx; top: -1113rpx">四进</text>
+    </view>
+    <view wx:if="{{one === 1 && two === 2 && three === 1 && four === 2 && five === 1 && six === 2}}">
+      <text class='text' style="position: relative; left: 222rpx; top: -1113rpx">对堂</text>
+    </view>
+    <view wx:if="{{four === 4}}">
+      <text class='text' style="position: relative; left: 111rpx; top: -1104rpx">状元 - 四点红</text>
+    </view>
+    <view wx:if="{{five === 5 || three === 5|| two === 5|| one === 5|| six === 5}}">
+      <text class='text' style="position: relative; left: 111rpx; top: -1104rpx">状元 - 五子登科</text>
+    </view>
 
-
+    <view wx:if="{{four === 5}}">
+      <text class='text' style="position: relative; left: 111rpx; top: -1104rpx">状元 - 五红</text>
+    </view>
+    <view wx:if="{{six === 6 || five === 6 ||three === 6 || two === 6}}">
+      <text class='text' style="position: relative; left: 111rpx; top: -1104rpx">状元 - 六杯黑</text>
+    </view>
+    <view wx:if="{{one === 6}}">
+      <text class='text' style="position: relative; left: 111rpx; top: -1104rpx">状元 - 遍地锦</text>
+    </view>
+    <view wx:if="{{four === 6}}">
+      <text class='text' style="position: relative; left: 111rpx; top: -1104rpx">状元 - 六杯红</text>
+    </view>
+    <view wx:if="{{four === 4 && one === 2}}">
+      <text class='text' style="position: relative; left: 111rpx; top: -1104rpx">状元 - 金花</text>
+    </view>
+    <view wx:if="{{four === 0 && one < 4 && two < 4 && four < 4 && five < 4 && six < 4 && three < 4}}">
+      <text class='text' style="position: relative; left: 111rpx; top: -1104rpx">谢谢参与</text>
+    </view>
   </view>
 </view>
 
