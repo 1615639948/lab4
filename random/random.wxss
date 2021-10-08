@@ -8,7 +8,6 @@ page{
    background-color: #70c7da;
    position: relative;
 }
-
 .background-image{
   height : 100%;
    position: absolute;
@@ -22,4 +21,10 @@ page{
    height: 100%;
    left: 0px;
    top: 0px;
+}
+
+text{
+  display: inline;
+  font-size: 70px;
+  padding: 2px;
 }
