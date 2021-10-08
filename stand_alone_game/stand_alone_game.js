@@ -18,6 +18,7 @@ Page({
     wx.navigateTo({
       url: '../random/random',
     })
+    
   },
   
   /**

@@ -131,6 +131,7 @@
       src="six.png" />
     </view>
 
+    
 
 
     <view wx:if="{{e === 1}}">
@@ -197,9 +198,7 @@
       src="six.png" />
     </view>
 
-    <view wx:key="index" wx:for="{{[a,b,c,d,e,f]}}">
-      <text>{{item}}</text>
-    </view>
+    <text>{{one}}{{two}}{{three}}{{four}}{{five}}{{six}}</text>
 
 
   </view>

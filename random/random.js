@@ -5,25 +5,99 @@ Page({
    * 页面的初始数据
    */
   data: {
-    a:Math.floor(Math.random() * 6) + 1,
-    b:Math.floor(Math.random() * 6) + 1,
-    c:Math.floor(Math.random() * 6) + 1,
-    d:Math.floor(Math.random() * 6) + 1,
-    e:Math.floor(Math.random() * 6) + 1,
-    f:Math.floor(Math.random() * 6) + 1,
-    one_num:0,
-    two_num:0,
-    three_num:0,
-    four_num:0,
-    five_num:0,
-    six_num:0,
+    
+  
   },
+
+  oneNum(arr) {
+    var n = 0
+    for (let index = 0; index < arr.length; index++) {
+      const element = arr[index];
+      if (element == 1) {
+        n += 1;
+      }
+    }
+    return n;
+  },
+
+  twoNum(arr) {
+    var n = 0
+    for (let index = 0; index < arr.length; index++) {
+      const element = arr[index];
+      if (element == 2) {
+        n += 1;
+      }
+    }
+    return n;
+  },
+
+  threeNum(arr) {
+    var n = 0
+    for (let index = 0; index < arr.length; index++) {
+      const element = arr[index];
+      if (element == 3) {
+        n += 1;
+      }
+    }
+    return n;
+  },
+
+  fourNum(arr) {
+    var n = 0
+    for (let index = 0; index < arr.length; index++) {
+      const element = arr[index];
+      if (element == 4) {
+        n += 1;
+      }
+    }
+    return n;
+  },
+
+  fiveNum(arr) {
+    var n = 0
+    for (let index = 0; index < arr.length; index++) {
+      const element = arr[index];
+      if (element == 5) {
+        n += 1;
+      }
+    }
+    return n;
+  },
+
+  sixNum(arr) {
+    var n = 0
+    for (let index = 0; index < arr.length; index++) {
+      const element = arr[index];
+      if (element == 6) {
+        n += 1;
+      }
+    }
+    return n;
+  },
+
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var
+      a = Math.floor(Math.random() * 6) + 1,
+      b = Math.floor(Math.random() * 6) + 1,
+      c = Math.floor(Math.random() * 6) + 1,
+      d = Math.floor(Math.random() * 6) + 1,
+      e = Math.floor(Math.random() * 6) + 1,
+      f = Math.floor(Math.random() * 6) + 1;
+    var arr = [a,b,c,d,e,f]
+    this.setData({a:a,b:b,c:c,d:d,e:e,f:f})
 
+    this.setData({
+      one: this.oneNum(arr),
+      two: this.twoNum(arr),
+      three: this.threeNum(arr),
+      four: this.fourNum(arr),
+      five: this.fiveNum(arr),
+      six: this.sixNum(arr)
+    })
   },
 
   /**
