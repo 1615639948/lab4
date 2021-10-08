@@ -173,32 +173,32 @@
         src="six.png" />
     </view>
   
-  <view wx:if="{{e === 1}}">
+  <view wx:if="{{f === 1}}">
       <image
         style="position: relative; left: 468rpx; top: -511rpx; width: 89rpx; height: 89rpx; display: inline-block; box-sizing: border-box"
         src="one.png" />
     </view>
-    <view wx:if="{{e === 2}}">
+    <view wx:if="{{f === 2}}">
       <image
         style="position: relative; left: 468rpx; top: -511rpx; width: 89rpx; height: 89rpx; display: inline-block; box-sizing: border-box"
         src="two.png" />
     </view>
-    <view wx:if="{{e === 3}}">
+    <view wx:if="{{f === 3}}">
       <image
         style="position: relative; left: 468rpx; top: -511rpx; width: 89rpx; height: 89rpx; display: inline-block; box-sizing: border-box"
         src="three.png" />
     </view>
-    <view wx:if="{{e === 4}}">
+    <view wx:if="{{f === 4}}">
       <image
         style="position: relative; left: 468rpx; top: -511rpx; width: 89rpx; height: 89rpx; display: inline-block; box-sizing: border-box"
         src="four.png" />
     </view>
-    <view wx:if="{{e === 5}}">
+    <view wx:if="{{f === 5}}">
       <image
         style="position: relative; left: 468rpx; top: -511rpx; width: 89rpx; height: 89rpx; display: inline-block; box-sizing: border-box"
         src="five.png" />
     </view>
-    <view wx:if="{{e === 6}}">
+    <view wx:if="{{f === 6}}">
       <image
         style="position: relative; left: 468rpx; top: -511rpx; width: 89rpx; height: 89rpx; display: inline-block; box-sizing: border-box"
         src="six.png" />
