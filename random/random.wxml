@@ -1,4 +1,5 @@
 <view class="root">
+  
   <image class='background-image' src='b.png' mode="aspectFill"></image>
   <view class="content"
     style="width: 750rpx; height: 1464rpx; display: block; box-sizing: border-box; left: 0rpx; top: -37rpx; position: absolute">
@@ -67,8 +68,11 @@
     
       
     </view>
-
-
+    <button class="butt" size="mini" type="primary"  bindtap="reload" > 再骰一次 </button>
+    <view class="text">
+      <text>还剩下：</text>
+      <text>{{count}}</text>
+    </view>
     <view wx:if="{{c === 1}}">
       <image
         style="position: relative; left: 468rpx; top: -352rpx; width: 89rpx; height: 89rpx; display: inline-block; box-sizing: border-box"
@@ -150,7 +154,9 @@
       <image
       style="position: relative; left: 323rpx; top: -415rpx; width: 89rpx; height: 89rpx; display: inline-block; box-sizing: border-box"
       src="three.png" />
-    </view>
+    
+
+</view>
     <view wx:if="{{e === 4}}">
       <image
       style="position: relative; left: 323rpx; top: -415rpx; width: 89rpx; height: 89rpx; display: inline-block; box-sizing: border-box"

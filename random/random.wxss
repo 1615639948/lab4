@@ -23,3 +23,21 @@ page{
    left: 0px;
    top: 0px;
 }
+.butt{
+  position: fixed; 
+  left: 35%  ;
+  top : 65%; 
+  width: 100%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.text{
+  position: fixed; 
+  left: 35%  ;
+  top : 70%; 
+  width: 100%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
