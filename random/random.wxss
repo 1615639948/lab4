@@ -8,7 +8,6 @@ page{
    background-color: #70c7da;
    position: relative;
 }
-
 .background-image{
   height : 100%;
    position: absolute;
