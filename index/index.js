@@ -35,8 +35,14 @@ Page({
       Roomcode: "",
       People: 0
     })
-
   },
+
+  to_Multiplayer_game(){
+    wx.navigateTo({
+      url: '../Multiplayer_game/Multiplayer_game',
+    })
+  },
+
   Input_3: function (e) {
     var temp = e.detail.value
     this.setData({

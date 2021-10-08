@@ -6,11 +6,14 @@ Page({
    */
   data: {
     count: 9,
-
     strarr: []
 
   },
-
+  Go_Back() {
+    this.setData({
+      recode: true
+    })
+  },
   oneNum(arr) {
     var n = 0
     for (let index = 0; index < arr.length; index++) {

@@ -249,7 +249,7 @@
   </view>
 </view>
 <block wx:if="{{recode == false}}">
-  <view class="mask" >
+  <view class="mask" catchtap="Go_Back">
         <view class= "eject" >
           <view class="table" >
  

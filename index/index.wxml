@@ -55,7 +55,7 @@
     
     </view>
     <block wx:if="{{muti == 1}}">
-      <view class="mask" >
+      <view class="mask">
         <view class= "eject" >
 
 
@@ -73,7 +73,7 @@
 
           <button class="goback" bindtap="Go_Back" size="mini" type="default">取消</button>
 
-          <button class="create" bindtap="Creat" size="mini" type="primary">创建</button>
+          <button class="create" bindtap="to_Multiplayer_game" size="mini" type="primary">创建</button>
           
         </view>
       </view>

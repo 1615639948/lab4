@@ -1,13 +1,30 @@
 // Multiplayer_game/Multiplayer_game.js
 Page({
-
-  /**
+/**
    * 页面的初始数据
    */
   data: {
-
+    muti: 0,
+    message: ""
   },
 
+  to_index(){
+    wx.navigateTo({
+      url: '../index/index',
+    })
+  },
+
+  to_chat(){
+    this.setData({
+      muti: 1
+    })
+  },
+
+  Go_Back() {
+    this.setData({
+      muti: 0
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
