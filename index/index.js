@@ -1,63 +1,64 @@
 const app = getApp()
 
+
 Page({
   data: {
-    muti:0,
-    RoomName:"",
-    Roomcode:"",
-    People : 0
+    muti: 0,
+    RoomName: "",
+    Roomcode: "",
+    People: 0,
+
   },
-  to_home_name(){
+ 
+  to_home_name() {
     this.setData({
-       muti : 1
+      muti: 1
     })
   },
-  to_StandAloneGame(){
+  to_StandAloneGame() {
     wx.navigateTo({
       url: '../stand_alone_game/stand_alone_game',
     })
   },
-  to_rule(){
+  to_rule() {
     wx.navigateTo({
       url: '../rule/rule',
     })
   },
 
-  Go_Back(){
+  Go_Back() {
     this.setData({
-      muti : 0
-   })
-   this.setData({
-    RoomName:"",
-    Roomcode:"",
-    People : 0
- })
+      muti: 0
+    })
+    this.setData({
+      RoomName: "",
+      Roomcode: "",
+      People: 0
+    })
+
   },
-  Input_3: function(e){
+  Input_3: function (e) {
     var temp = e.detail.value
     this.setData({
-      RoomName : temp
-   })
+      RoomName: temp
+    })
+    app.globalData.RoomName = this.data.RoomName
+    console.log(app.globalData.RoomName)
   },
-  Input_2: function(e){
+  Input_2: function (e) {
     var temp = e.detail.value
     this.setData({
-      Roomcode : temp
-   })
+      Roomcode: temp
+    })
+    app.globalData.Roomcode = this.data.Roomcode
+    console.log(app.globalData.Roomcode)
   },
-  Input_1: function(e){
+  Input_1: function (e) {
     var temp = e.detail.value
     this.setData({
-      People : temp
-   })
+      People: temp
+    })
+    app.globalData.People = this.data.People
+    console.log(app.globalData.People)
   },
-
-  onLoad() {
-    console.log('代码片段是一种迷你、可分享的小程序或小游戏项目，可用于分享小程序和小游戏的开发经验、展示组件和 API 的使用、复现开发问题和 Bug 等。可点击以下链接查看代码片段的详细文档：')
-    console.log('https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/devtools.html')
-  },
-
-
-  
-
 })
