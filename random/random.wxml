@@ -218,25 +218,25 @@
       <text style="position: relative; left: 232rpx; top: -1136rpx">对堂</text>
     </view>
     <view wx:if="{{four === 4}}">
-      <text style="position: relative; left: 232rpx; top: -1136rpx">状元 - 四点红</text>
+      <text style="position: relative; left: 118rpx; top: -1138rpx">状元 - 四点红</text>
     </view>
     <view wx:if="{{five === 5}}">
-      <text style="position: relative; left: 232rpx; top: -1136rpx">状元 - 五子登科</text>
+      <text style="position: relative; left: 118rpx; top: -1138rpx">状元 - 五子登科</text>
     </view>
     <view wx:if="{{four === 5}}">
-      <text style="position: relative; left: 232rpx; top: -1136rpx">状元 - 五红</text>
+      <text style="position: relative; left: 118rpx; top: -1138rpx">状元 - 五红</text>
     </view>
     <view wx:if="{{six === 6}}">
-      <text style="position: relative; left: 232rpx; top: -1136rpx">状元 - 六杯黑</text>
+      <text style="position: relative; left: 118rpx; top: -1138rpx">状元 - 六杯黑</text>
     </view>
     <view wx:if="{{one === 6}}">
-      <text style="position: relative; left: 232rpx; top: -1136rpx">状元 - 遍地锦</text>
+      <text style="position: relative; left: 118rpx; top: -1138rpx">状元 - 遍地锦</text>
     </view>
     <view wx:if="{{four === 6}}">
-      <text style="position: relative; left: 232rpx; top: -1136rpx">状元 - 六杯红</text>
+      <text style="position: relative; left: 118rpx; top: -1138rpx">状元 - 六杯红</text>
     </view>
     <view wx:if="{{four === 4 && one === 2}}">
-      <text style="position: relative; left: 232rpx; top: -1136rpx">状元 - 金花</text>
+      <text style="position: relative; left: 118rpx; top: -1138rpx">状元 - 金花</text>
     </view>
     <view wx:if="{{four === 0 && one < 4 && two < 4 && four < 4 && five < 4 && six < 4}}">
       <text style="position: relative; left: 118rpx; top: -1138rpx">谢谢参与</text>
