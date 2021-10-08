@@ -248,4 +248,138 @@
     </view>
   </view>
 </view>
+<block wx:if="{{recode == false}}">
+  <view class="mask" >
+        <view class= "eject" >
+          <view class="table" >
+ 
+          <view class="tab_tr">
+
+     <view class="tr_td1 text3"><text>序号</text></view>
+
+     <view class="tr_td2 text3"><text>姓名</text></view>
+
+     <view class="tr_td3 text3"><text>饼子</text></view>
+
+          </view>
+          <block >
+
+    <view class="tab_tr">
+
+     <view class="tr_td1 text3"><text>1</text></view>
+
+     <view class="tr_td2 text3"><text>a</text></view>
+
+     <view class="tr_td3 text3"><text>1</text></view>
+
+     
+
+ </view>
+
+ <view class="tab_tr">
+
+     <view class="tr_td1 text3"><text>2</text></view>
+
+     <view class="tr_td2 text3"><text>a</text></view>
+
+     <view class="tr_td3 text3"><text>1</text></view>
+ 
+     
+
+ </view>
+ <view class="tab_tr">
+
+     <view class="tr_td1 text3"><text>3</text></view>
+
+     <view class="tr_td2 text3"><text>aa</text></view>
+
+     <view class="tr_td3 text3"><text>1</text></view>
+
+     
+
+ </view>
+ <view class="tab_tr">
+
+     <view class="tr_td1 text3"><text>4</text></view>
+
+     <view class="tr_td2 text3"><text>aa</text></view>
+
+     <view class="tr_td3 text3"><text>1</text></view>
+
+    
+
+ </view>
+ <view class="tab_tr">
+
+<view class="tr_td1 text3"><text>5</text></view>
+
+<view class="tr_td2 text3"><text>aa</text></view>
+
+<view class="tr_td3 text3"><text>1</text></view>
+
+
+
+</view>
+<view class="tab_tr">
+
+<view class="tr_td1 text3"><text>6</text></view>
+
+<view class="tr_td2 text3"><text>aa</text></view>
+
+<view class="tr_td3 text3"><text>1</text></view>
+
+
+
+</view>
+<view class="tab_tr">
+
+<view class="tr_td1 text3"><text>7</text></view>
+
+<view class="tr_td2 text3"><text>aa</text></view>
+
+<view class="tr_td3 text3"><text>1</text></view>
+
+
+
+</view>
+<view class="tab_tr">
+
+<view class="tr_td1 text3"><text>8</text></view>
+
+<view class="tr_td2 text3"><text>aa</text></view>
+
+<view class="tr_td3 text3"><text>1</text></view>
+
+
+
+</view>
+<view class="tab_tr">
+
+<view class="tr_td1 text3"><text>9</text></view>
+
+<view class="tr_td2 text3"><text>aa</text></view>
+
+<view class="tr_td3 text3"><text>1</text></view>
+
+
+
+</view>
+<view class="tab_tr">
+
+<view class="tr_td1 text3"><text>10</text></view>
+
+<view class="tr_td2 text3"><text>aa</text></view>
+
+<view class="tr_td3 text3"><text>1</text></view>
+
+
+
+</view>
+          </block>
+
+</view>
+        
+        </view>
+      </view>
+</block>
 

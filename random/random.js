@@ -5,8 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    count : 10
-  
+    count : 9,
+    recode : true
   },
 
   oneNum(arr) {
@@ -101,8 +101,8 @@ Page({
       count : temp
     })
     }else{
-      wx.navigateTo({
-        url: '../stand_alone_game/stand_alone_game',
+      this.setData({
+        recode : false
       })
     }
   
