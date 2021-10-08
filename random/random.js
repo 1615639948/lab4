@@ -6,21 +6,9 @@ Page({
    */
   data: {
     count: 9,
-    
-      a1: "",
-      b1: "",
-      c1: "",
-      d1: "",
-      e1: "",
-      f1: "",
-      f2: "",
-      f3: "",
-      f4: "",
-      f5: "",
-      f6: "",
-      f7: "",
-      g: ""
-    
+
+    strarr: []
+
   },
 
   oneNum(arr) {
@@ -88,19 +76,76 @@ Page({
     }
     return n;
   },
+  Def_bobing() {
+    var
+      one = this.data.one,
+      two = this.data.two,
+      three = this.data.three,
+      four = this.data.four,
+      five = this.data.five,
+      six = this.data.six
+    if (four === 1 && one + two + three + four + five + six != 21 && one < 4 && two < 4 && three < 4 && five < 4 && six < 4) {
+      this.data.strarr.push('一秀')
+    }
+    if (four === 2 && one < 4 && two < 4 && three < 4 && five < 4 && six < 4) {
+      this.data.strarr.push('二举')
+    }
+    if (four === 3) {
+      this.data.strarr.push('三红')
+    }
+    if (two === 4 || three === 4 || one === 4 || five === 4 || six === 4) {
+      this.data.strarr.push('四进')
+    }
+    if (one == 1 && two == 2 && three == 1 && four == 2 && five == 1 && six == 2) {
+      this.data.strarr.push('对堂')
+    }
+    if (four === 4 && one !== 2) {
+      this.data.strarr.push('状元')
+    }
+    if (five == 5 || three == 5 || two == 5 || one == 5 || six == 5) {
+      this.data.strarr.push('五子登科')
+    }
+    if (four == 5) {
+      this.data.strarr.push('五红')
+    }
+    if (six == 6 || five == 6 || three == 6 || two == 6) {
+      this.data.strarr.push('六杯黑')
+    }
+    if (one == 6) {
+      this.data.strarr.push('遍地锦')
+    }
+    if (four == 6) {
+      this.data.strarr.push('六杯红')
+    }
+    if (four == 4 && one == 2) {
+      this.data.strarr.push('金花')
+    }
+    if (four == 0 && one < 4 && two < 4 && four < 4 && five < 4 && six < 4 && three < 4) {
+      this.data.strarr.push('谢谢参与')
+    }
+    this.setData({
+      strarr: this.data.strarr
+    })
+  },
 
-
-  reload(){
-    if (this.data.count>0) {
+  reload() {
+    if (this.data.count > 0) {
       var
-      a = Math.floor(Math.random() * 6) + 1,
-      b = Math.floor(Math.random() * 6) + 1,
-      c = Math.floor(Math.random() * 6) + 1,
-      d = Math.floor(Math.random() * 6) + 1,
-      e = Math.floor(Math.random() * 6) + 1,
-      f = Math.floor(Math.random() * 6) + 1;
-      var arr = [a,b,c,d,e,f]
-      this.setData({a:a,b:b,c:c,d:d,e:e,f:f})
+        a = Math.floor(Math.random() * 6) + 1,
+        b = Math.floor(Math.random() * 6) + 1,
+        c = Math.floor(Math.random() * 6) + 1,
+        d = Math.floor(Math.random() * 6) + 1,
+        e = Math.floor(Math.random() * 6) + 1,
+        f = Math.floor(Math.random() * 6) + 1;
+      var arr = [a, b, c, d, e, f]
+      this.setData({
+        a: a,
+        b: b,
+        c: c,
+        d: d,
+        e: e,
+        f: f
+      })
       this.setData({
         one: this.oneNum(arr),
         two: this.twoNum(arr),
@@ -109,78 +154,15 @@ Page({
         five: this.fiveNum(arr),
         six: this.sixNum(arr)
       })
-      if (four == 1 && one + two + three + four + five + six != 21 && one < 4 && two < 4 && three < 4 && five < 4 && six < 4) {
-        this.setData({
-          a1 : "一秀",
-        })
-      }
-      if (four == 2 && one < 4 && two < 4 && three < 4 && five < 4 && six < 4) {
-        this.setData({
-          b1 : "二举",
-        })
-      }
-      if (four == 3) {
-        this.setData({
-          c1 : "三红",
-        })
-      }
-      if (two == 4|| three == 4 || one == 4|| five == 4 || six==4) {
-        this.setData({
-          d1 : "四进",
-        })
-      }
-      if (one == 1 && two == 2 && three == 1 && four == 2 && five == 1 && six == 2) {
-        this.setData({
-          e1 : "对堂",
-        })
-      }
-      if (four === 4) {
-        this.setData({
-          f1 : "状元",
-        })
-      }
-      if (five == 5 || three == 5|| two == 5|| one == 5|| six == 5) {
-        this.setData({
-          f2 : "五子登科",
-        })
-      }
-      if (four == 5) {
-        this.setData({
-          f3 : "六杯黑",
-        })
-      }
-      if (six == 6 || five == 6 ||three == 6 || two == 6) {
-        this.setData({
-          f4 : "五红",
-        })
-      }
-      if (one == 6) {
-        this.setData({
-          f5 : "遍地锦",
-        })
-      }
-      if (four == 6) {
-        this.setData({
-          f6 : "六杯红",
-        })
-      }
-      if (four == 4 && one == 2) {
-        this.setData({
-          f7 : "金花",
-        })
-      }
-      if (four == 0 && one < 4 && two < 4 && four < 4 && five < 4 && six < 4 && three < 4) {
-        this.setData({
-          g : "谢谢参与",
-        })
-      }
       var temp = this.data.count - 1;
+
       this.setData({
-      count : temp
-    })
-    }else{
+        count: temp
+      })
+      this.Def_bobing()
+    } else {
       this.setData({
-        recode : false
+        recode: false
       })
     }
   },
@@ -196,18 +178,29 @@ Page({
       d = Math.floor(Math.random() * 6) + 1,
       e = Math.floor(Math.random() * 6) + 1,
       f = Math.floor(Math.random() * 6) + 1;
-    var arr = [a,b,c,d,e,f]
-    this.setData({a:a,b:b,c:c,d:d,e:e,f:f})
+    var arr = [a, b, c, d, e, f]
 
+
+    this.setData({
+      a: a,
+      b: b,
+      c: c,
+      d: d,
+      e: e,
+      f: f
+    })
     this.setData({
       one: this.oneNum(arr),
       two: this.twoNum(arr),
       three: this.threeNum(arr),
       four: this.fourNum(arr),
       five: this.fiveNum(arr),
-      six: this.sixNum(arr)
+      six: this.sixNum(arr),
     })
+    this.Def_bobing()
   },
+
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -241,7 +234,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    
+
   },
 
   /**
