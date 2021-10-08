@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    count : 10
   
   },
 
@@ -75,6 +75,38 @@ Page({
     return n;
   },
 
+
+  reload(){
+    if (this.data.count>0) {
+      var
+      a = Math.floor(Math.random() * 6) + 1,
+      b = Math.floor(Math.random() * 6) + 1,
+      c = Math.floor(Math.random() * 6) + 1,
+      d = Math.floor(Math.random() * 6) + 1,
+      e = Math.floor(Math.random() * 6) + 1,
+      f = Math.floor(Math.random() * 6) + 1;
+      var arr = [a,b,c,d,e,f]
+      this.setData({a:a,b:b,c:c,d:d,e:e,f:f})
+    
+      this.setData({
+        one: this.oneNum(arr),
+        two: this.twoNum(arr),
+        three: this.threeNum(arr),
+        four: this.fourNum(arr),
+        five: this.fiveNum(arr),
+        six: this.sixNum(arr)
+      })
+      var temp = this.data.count - 1;
+      this.setData({
+      count : temp
+    })
+    }else{
+      wx.navigateTo({
+        url: '../stand_alone_game/stand_alone_game',
+      })
+    }
+  
+  },
 
   /**
    * 生命周期函数--监听页面加载
