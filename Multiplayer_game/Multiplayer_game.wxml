@@ -1,0 +1,16 @@
+<view class="root">
+  <image class='background-image' src='background.png' mode="aspectFill"></image>
+  <view class="content" style="position:relative;">
+  
+    <button
+      style="position: relative; left: 182rpx; top: 1330rpx; width: 214rpx; height: 80rpx; display: block; box-sizing: border-box"
+      bindtap="to_index" plain="{{ true }}">返回首页</button>
+  
+    <image
+      style="position: relative; left: 202rpx; top: -10rpx; width: 298rpx; height: 111rpx; display: inline-block; box-sizing: border-box"
+      src="title.png" />
+  
+    <button style="position: relative; left: -165rpx; top: 1133rpx; width: 214rpx; height: 80rpx; display: block; box-sizing: border-box" plain="{{ true }}">聊天</button>
+  </view>
+  
+</view>

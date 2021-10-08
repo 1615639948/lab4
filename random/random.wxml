@@ -68,8 +68,8 @@
     
       
     </view>
-    <button class="butt" size="mini" type="primary"  bindtap="reload" > 再骰一次 </button>
-    <view class="text1">
+    <button class="butt" size="mini" type="primary"  bindtap="reload"  style="position: fixed; left: 238rpx; top: 997rpx; width: 231rpx; height: 69rpx; display: block; box-sizing: border-box"> 再骰一次 </button>
+    <view class="text1" style="position: fixed; left: 176rpx; top: 1141rpx">
       <text>还剩下：</text>
       <text>{{count}}</text>
     </view>

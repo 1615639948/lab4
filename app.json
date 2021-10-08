@@ -1,11 +1,11 @@
 {
   "pages": [
-    
     "index/index",
     "home_name/home_name",
     "stand_alone_game/stand_alone_game",
     "rule/rule",
-    "random/random"
+    "random/random",
+    "Multiplayer_game/Multiplayer_game"
   ],
   "window": {
     "backgroundTextStyle": "dark",

@@ -32,12 +32,13 @@ page{
   box-sizing: border-box
 }
 .text1{
-  position: fixed; 
+ 
   left: 35%  ;
   top : 70%; 
   width: 100%; 
   height: 70rpx; 
   display: flex; 
+  font-size: 40pX;
   box-sizing: border-box
 }
 
