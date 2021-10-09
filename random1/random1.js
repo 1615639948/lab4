@@ -6,8 +6,13 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     yixiu: 2,
     erju: 10,
+=======
+    yixiu: 10,
+    erju: 0,
+>>>>>>> 256ceeb848a0df6b83bf8de899263f1505f10ea2
     sanhong: 0,
     sijin: 0,
     duitang: 0,
@@ -18,6 +23,12 @@ Page({
     gamerarr4: [],
     gamerarr5: [],
     gamerarr6: [],
+    score1: [],
+    score2: [],
+    score3: [],
+    score4: [],
+    score5: [],
+    score6: [],
     //成绩判断 
     recode: true,
     Gamernum: 1,
@@ -25,12 +36,39 @@ Page({
     ejectdef : true
   },
 
+  bingNum(arr){
+    var a = 0; var b = 0; var c = 0; var d = 0; var e = 0; var f = 0;
+    for (let index = 0; index < arr.length; index++) {
+      var element = arr[index];
+      if (element == "一秀") {
+        a += 1;
+      }
+      if (element == "二举") {
+        b += 1;
+      }
+      if (element == "三红") {
+        c += 1;
+      }
+      if (element == "四进") {
+        d += 1;
+      }
+      if (element == "对堂") {
+        e += 1;
+      }
+      if (element == "状元") {
+        f += 1;
+      }
+    }
+    var arr1 = [a, b, c, d, e, f]
+    return arr1;
+  },
 
   Go_Back() {
     this.setData({
       recode: true
     })
   },
+
   oneNum(arr) {
     var n = 0
     for (let index = 0; index < arr.length; index++) {
@@ -96,6 +134,7 @@ Page({
     }
     return n;
   },
+
   Def_bobing() {
     var
       one = this.data.one,
@@ -213,7 +252,6 @@ Page({
       f = Math.floor(Math.random() * 6) + 1;
     var arr = [a, b, c, d, e, f]
 
-
     this.setData({
       a: a,
       b: b,
@@ -320,6 +358,12 @@ Page({
         })
       }
     } else {
+      this.data.score1 = this.bingNum(this.data.gamerarr1)
+      this.data.score2 = this.bingNum(this.data.gamerarr2)
+      this.data.score3 = this.bingNum(this.data.gamerarr3)
+      this.data.score4 = this.bingNum(this.data.gamerarr4)
+      this.data.score5 = this.bingNum(this.data.gamerarr5)
+      this.data.score6 = this.bingNum(this.data.gamerarr6)
       this.setData({
         recode: false
       })
