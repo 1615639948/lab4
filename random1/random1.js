@@ -7,7 +7,7 @@ Page({
    */
   data: {
     yixiu: 2,
-    erju: 0,
+    erju: 10,
     sanhong: 0,
     sijin: 0,
     duitang: 0,
@@ -237,7 +237,47 @@ Page({
     return sum;
   },
 
+
+  judge(n,bobing){
+    if (bobing == '一秀') {
+      if (this.data.yixiu != 0) {
+        this.write(n,bobing)
+      }
+    }
+    if (bobing == '二举') {
+      if (this.data.erju != 0) {
+        this.write(n,bobing)
+      }
+    }
+    if (bobing == '三红') {
+      if (this.data.sanhong  != 0) {
+        this.write(n,bobing)
+      }
+    }
+    if (bobing == '四进') {
+      if (this.data.sijin != 0) {
+        this.write(n,bobing)
+      }
+    }
+    if (bobing == '对堂') {
+      if (this.data.对堂 != 0) {
+        this.write(n,bobing)
+      }
+    }
+    if (bobing == '状元') {
+      if (this.data.zhuangyuan != 0) {
+        this.write(n,bobing)
+      }
+    }
+  },
+
+
   write(n, bobing) {
+    if (bobing == '一秀') {
+      if (this.data.yixiu != 0) {
+        
+      }
+    }
     if (n == 1) {
       this.data.gamerarr1.push(bobing)
     }
@@ -263,8 +303,9 @@ Page({
     //重新摇色子
     this.random()
     var bobing = this.Def_bobing();//计算博饼大小
+   
+    this.judge(this.data.Gamernum, bobing)
     this.countbing(bobing)//计算奖池
-    this.write(this.data.Gamernum, bobing)
     //终结逻辑
     if (this.sumbing() != 0) {
       // 玩家更替的逻辑
