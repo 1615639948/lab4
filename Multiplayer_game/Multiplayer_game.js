@@ -1,16 +1,28 @@
-// Multiplayer_game/Multiplayer_game.js
+const app = getApp()
+
 Page({
 /**
    * 页面的初始数据
    */
   data: {
     muti: 0,
-    message: ""
+    message: "",
+    People : 0,
+    muti1 : 0,
+    gamer: 0,
+    Name:'',
+    Namearr: ['']
   },
 
   to_index(){
     wx.navigateTo({
       url: '../index/index',
+    })
+  },
+
+  naming(){
+    this.setData({
+      muti1 : 1
     })
   },
 
@@ -25,11 +37,34 @@ Page({
       muti: 0
     })
   },
+  Adding_gamer(){
+    var temp
+    temp = this.data.gamer -1
+    this.setData({
+      gamer : temp,
+    })
+    this.data.Namearr.push(this.data.Name)
+    if (this.data.gamer < 0) {
+      //转到博饼页面
+    }
+  },
+
+  Input_name: function (e) {
+    var temp = e.detail.value
+    this.setData({
+      Name: temp
+    })
+    
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({
+      People : app.globalData.People,
+      gamer : app.globalData.People,
+    })
 
   },
 

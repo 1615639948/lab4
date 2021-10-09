@@ -3,7 +3,7 @@
   <view class="content" style="position: relative; left: 0rpx; top: 0rpx">
   
     <button
-      style="position: relative; left: 182rpx; top: 1330rpx; width: 214rpx; height: 80rpx; display: block; box-sizing: border-box"
+      style="position: relative; left: 180rpx; top: 1247rpx; width: 214rpx; height: 80rpx; display: block; box-sizing: border-box"
       bindtap="to_index" plain="{{ true }}">返回首页</button>
   
     <image
@@ -14,12 +14,9 @@
       style="position: relative; left: 82rpx; top: 249rpx; width: 580rpx; height: 600rpx; display: inline-block; box-sizing: border-box"
       src="bowl.png" />
   
-    <image
-      style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: -357rpx; top: -173rpx"
-      src="action.gif" />
   
-    <image src="action.gif"
-      style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: -323rpx; top: -173rpx" />
+  
+  
   
     <image
       style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: 444rpx; top: -256rpx"
@@ -29,21 +26,19 @@
       style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: 147rpx; top: -156rpx"
       src="action.gif" />
   
-    <image
-      style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: 182rpx; top: -156rpx"
-      src="action.gif" />
   
-    <image
-      style="position: relative; width: 77rpx; height: 77rpx; display: inline-block; box-sizing: border-box; left: 216rpx; top: -156rpx"
-      src="action.gif" />
+  
+  
   
     <button
       style="position: relative; left: -187rpx; top: 443rpx; width: 214rpx; height: 80rpx; display: block; box-sizing: border-box"
       bindtap="to_chat" plain="{{ true }}">聊天</button>
   
   
-    <text style="position: relative; left: 261rpx; top: -698rpx">参加人数：{{}}</text>
-  </view>
+    <text style="position: relative; left: 261rpx; top: -698rpx">参加人数：{{People}}</text>
+  
+    <button style="position: relative; left: -4rpx; top: 4rpx" bindtap="naming" plain="{{ true }}">摇骰子</button>
+    </view>
   <block wx:if="{{muti == 1}}">
     <view class="mask">
       <view class="eject">
@@ -61,5 +56,18 @@
     </view>
   </block>
 
+  <block wx:if="{{muti1 == 1}}">
+    <view class="mask">
+      <view class="eject">
+        <view class= "Input3">
+            <input  type="text" placeholder="请输玩家名字喔" placeholder-style="color:#FFFFFF" bindinput= 'Input_name' ></input>
+          </view>
+        <button class="goback" bindtap="Adding_gamer" size="mini" type="primary">加入玩家{{}}
+        </button>
 
+        <button class="create" bindtap="Go_Back" size="mini" type="default">{{gamer}}
+        </button>
+      </view>
+    </view>
+  </block>
 </view>

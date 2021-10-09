@@ -77,3 +77,16 @@ page{
   z-index: 3;
   border-radius: 4% ;
 }
+.Input3{
+  display: flex;
+  position: fixed;
+  width: 60%;
+  height: 6%;
+  left: 20%;
+  top: 27%;
+  background-color:rgba(165, 161, 161, 0.397);
+  justify-content:center;
+  align-items: center;
+  z-index: 3;
+  border-radius: 4% ;
+}
