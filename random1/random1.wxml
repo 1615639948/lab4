@@ -289,22 +289,22 @@
         </view>   
       </view>
   <view class="output1">
-          <text >玩家1:状元{{}}个 对堂{{}}个 三红{{}}个 四进{{}}个 二举{{}}个 一秀{{}}</text>
+          <text >玩家1:状元{{score1[5]}}个 对堂{{score1[4]}}个 三红{{score1[3]}}个 四进{{score1[2]}}个 二举{{score1[1]}}个 一秀{{score1[0]}}</text>
   </view>
   <view class="output2">
-          <text >玩家2:状元{{}}个 对堂{{}}个 三红{{}}个 四进{{}}个 二举{{}}个 一秀{{}}</text>
+          <text >玩家2:状元{{score2[5]}}个 对堂{{score2[4]}}个 三红{{score2[3]}}个 四进{{score2[2]}}个 二举{{score2[1]}}个 一秀{{score2[0]}}</text>
   </view>
   <view class="output3">
-          <text >玩家3:状元{{}}个 对堂{{}}个 三红{{}}个 四进{{}}个 二举{{}}个 一秀{{}}</text>
+          <text >玩家3:状元{{score3[5]}}个 对堂{{score3[4]}}个 三红{{score3[3]}}个 四进{{score3[2]}}个 二举{{score3[1]}}个 一秀{{score3[0]}}</text>
   </view>
   <view class="output4">
-          <text >玩家4:状元{{}}个 对堂{{}}个 三红{{}}个 四进{{}}个 二举{{}}个 一秀{{}}</text>
+          <text >玩家4:状元{{score4[5]}}个 对堂{{score4[4]}}个 三红{{score4[3]}}个 四进{{score4[2]}}个 二举{{score4[1]}}个 一秀{{score4[0]}}</text>
   </view>
   <view class="output5">
-          <text >玩家5:状元{{}}个 对堂{{}}个 三红{{}}个 四进{{}}个 二举{{}}个 一秀{{}}</text>
+          <text >玩家5:状元{{score5[5]}}个 对堂{{score5[4]}}个 三红{{score5[3]}}个 四进{{score5[2]}}个 二举{{score5[1]}}个 一秀{{score5[0]}}</text>
   </view>
   <view class="output6">
-          <text >玩家6:状元{{}}个 对堂{{}}个 三红{{}}个 四进{{}}个 二举{{}}个 一秀{{}}</text>
+          <text >玩家6:状元{{score6[5]}}个 对堂{{score6[4]}}个 三红{{score6[3]}}个 四进{{score6[2]}}个 二举{{score6[1]}}个 一秀{{score6[0]}}</text>
   </view>
  
 </block>

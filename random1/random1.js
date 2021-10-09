@@ -6,15 +6,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-<<<<<<< HEAD
-    yixiu: 2,
+    yixiu: 20,
     erju: 10,
-=======
-    yixiu: 10,
-    erju: 0,
->>>>>>> 256ceeb848a0df6b83bf8de899263f1505f10ea2
-    sanhong: 0,
-    sijin: 0,
+    sanhong: 3,
+    sijin: 3,
     duitang: 0,
     zhuangyuan: 0,
     gamerarr1: [],
@@ -365,6 +360,12 @@ Page({
       this.data.score5 = this.bingNum(this.data.gamerarr5)
       this.data.score6 = this.bingNum(this.data.gamerarr6)
       this.setData({
+        score1 : this.bingNum(this.data.gamerarr1),
+        score2 : this.bingNum(this.data.gamerarr2),
+        score3 : this.bingNum(this.data.gamerarr3),
+        score4 : this.bingNum(this.data.gamerarr4),
+        score5 : this.bingNum(this.data.gamerarr5),
+        score6 : this.bingNum(this.data.gamerarr6),
         recode: false
       })
     }
