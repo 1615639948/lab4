@@ -80,6 +80,7 @@
     <button class="butt6" size="mini" type="default">状元{{zhuangyuan}}</button>
   
   
+  
     <block wx:if="{{Gamernum == 1}}">
       <button class="buttgamer" size="mini" type="default" bindtap="eject1">轮到玩家{{Gamernum}}</button>
     </block>
@@ -276,13 +277,35 @@
     </view>
   
     <text style="position: absolute; left: 153rpx; top: 1327rpx">当每个饼子都有归宿，游戏结束</text>
+  
+    
   </view>
-  <button ></button>
+  <button style="position: relative; left: 0rpx; top: 1328rpx" bindtap="to_index" plain="{{ true }}">返回首页</button>
 </view>
 <block wx:if="{{recode == false}}">
   <view class="mask" catchtap="Go_Back">
         <view class= "eject" >
+
         </view>   
       </view>
+  <view class="output1">
+          <text >玩家1:状元{{}}个 对堂{{}}个 三红{{}}个 四进{{}}个 二举{{}}个 一秀{{}}</text>
+  </view>
+  <view class="output2">
+          <text >玩家2:状元{{}}个 对堂{{}}个 三红{{}}个 四进{{}}个 二举{{}}个 一秀{{}}</text>
+  </view>
+  <view class="output3">
+          <text >玩家3:状元{{}}个 对堂{{}}个 三红{{}}个 四进{{}}个 二举{{}}个 一秀{{}}</text>
+  </view>
+  <view class="output4">
+          <text >玩家4:状元{{}}个 对堂{{}}个 三红{{}}个 四进{{}}个 二举{{}}个 一秀{{}}</text>
+  </view>
+  <view class="output5">
+          <text >玩家5:状元{{}}个 对堂{{}}个 三红{{}}个 四进{{}}个 二举{{}}个 一秀{{}}</text>
+  </view>
+  <view class="output6">
+          <text >玩家6:状元{{}}个 对堂{{}}个 三红{{}}个 四进{{}}个 二举{{}}个 一秀{{}}</text>
+  </view>
+ 
 </block>
 
