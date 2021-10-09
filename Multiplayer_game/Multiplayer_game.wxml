@@ -57,15 +57,16 @@
   </block>
 
   <block wx:if="{{muti1 == 1}}">
-    <view class="mask">
+    <view class="mask" >
       <view class="eject">
-        <view class= "Input3">
+        <view class= "Input3" >
             <input  type="text" placeholder="请输玩家名字喔" placeholder-style="color:#FFFFFF" bindinput= 'Input_name' ></input>
           </view>
+
         <button class="goback" bindtap="Adding_gamer" size="mini" type="primary">加入玩家{{}}
         </button>
 
-        <button class="create" bindtap="Go_Back" size="mini" type="default">{{gamer}}
+        <button class="create" bindtap="Go_Back" size="mini" type="default">重命名/目前{{gamer}}
         </button>
       </view>
     </view>

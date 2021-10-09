@@ -10,8 +10,7 @@ Page({
     People : 0,
     muti1 : 0,
     gamer: 0,
-    Name:'',
-    Namearr: ['']
+    Name:''
   },
 
   to_index(){
@@ -34,7 +33,8 @@ Page({
 
   Go_Back() {
     this.setData({
-      muti: 0
+      muti: 0,
+      muti1 :0
     })
   },
   Adding_gamer(){
@@ -43,10 +43,20 @@ Page({
     this.setData({
       gamer : temp,
     })
-    this.data.Namearr.push(this.data.Name)
-    if (this.data.gamer < 0) {
+    app.globalData.Namearr.push(this.data.Name)
+    console.log(app.globalData.Namearr)
+    if (this.data.gamer == 0 ) {
       //转到博饼页面
+      wx.navigateTo({
+        url: '../random1/random1',
+      })
     }
+    if (this.data.gamer < 0) {
+      wx.navigateTo({
+        url: '../Multiplayer_game/Multiplayer_game',
+      })
+    }
+   
   },
 
   Input_name: function (e) {
@@ -79,7 +89,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    app.globalData.Namearr = []
   },
 
   /**

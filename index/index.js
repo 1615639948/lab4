@@ -38,9 +38,12 @@ Page({
   },
 
   to_Multiplayer_game(){
-    wx.navigateTo({
-      url: '../Multiplayer_game/Multiplayer_game',
-    })
+    if (app.globalData.People>0&&app.globalData.People<=6) {
+      wx.navigateTo({
+        url: '../Multiplayer_game/Multiplayer_game',
+      })
+    }
+    
   },
 
   Input_3: function (e) {
@@ -67,4 +70,13 @@ Page({
     app.globalData.People = this.data.People
     console.log(app.globalData.People)
   },
+ 
+  onShow: function (options) {
+  
+    app.globalData.People = 0
+    app.globalData.Namearr = []
+
+},
+
 })
+  
