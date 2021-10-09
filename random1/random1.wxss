@@ -31,6 +31,122 @@ page{
    display: flex; 
    box-sizing: border-box
  }
+ /*
+ -----------------------------------
+ 显示玩家和各个东西的button
+ */
+ .buttgamer{
+  position: fixed; 
+  left: 5% ;
+  top : 2%; 
+  width: 50%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.buttgamer2{
+  position: fixed; 
+  left: 20% ;
+  top : 2%; 
+  width: 50%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.buttgamer3{
+  position: fixed; 
+  left: 35% ;
+  top : 2%; 
+  width: 50%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.buttgamer4{
+  position: fixed; 
+  left: 50% ;
+  top : 2%; 
+  width: 50%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.buttgamer5{
+  position: fixed; 
+  left: 65% ;
+  top : 2%; 
+  width: 50%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.buttgamer6{
+  position: fixed; 
+  left: 5% ;
+  top : 8%; 
+  width: 50%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+ .butt1{
+  position: fixed; 
+  left: 2%  ;
+  top : 80%; 
+  width: 50%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.butt2{
+  position: fixed; 
+  left: 18%  ;
+  top : 80%; 
+  width: 50%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.butt3{
+  position: fixed; 
+  left: 35%  ;
+  top : 80%; 
+  width: 50%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.butt4{
+  position: fixed; 
+  left: 50%  ;
+  top : 80%; 
+  width: 50%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.butt5{
+  position: fixed; 
+  left: 65%  ;
+  top : 80%; 
+  width: 50%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.butt6{
+  position: fixed; 
+  left: 80%  ;
+  top : 80%; 
+  width: 50%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+ /*
+ -----------------------------------
+ 显示玩家和各个东西的button
+ */
  .text1{
   
    left: 35%  ;
@@ -47,6 +163,7 @@ page{
    font-size: 70pX;
    padding: 2pX;
  }
+ 
  .mask{
    position: absolute;
    width: 100%;

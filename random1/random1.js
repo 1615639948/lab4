@@ -1,14 +1,31 @@
 // random/random.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    count: 9,
-    strarr: []
-
+    yixiu: 2,
+    erju: 0,
+    sanhong: 0,
+    sijin: 0,
+    duitang: 0,
+    zhuangyuan: 0,
+    gamerarr1: [],
+    gamerarr2: [],
+    gamerarr3: [],
+    gamerarr4: [],
+    gamerarr5: [],
+    gamerarr6: [],
+    //成绩判断 
+    recode: true,
+    Gamernum: 1,
+    Gamernumc: 0,
+    ejectdef : true
   },
+
+
   Go_Back() {
     this.setData({
       recode: true
@@ -88,92 +105,105 @@ Page({
       five = this.data.five,
       six = this.data.six
     if (four === 1 && one + two + three + four + five + six != 21 && one < 4 && two < 4 && three < 4 && five < 4 && six < 4) {
-      this.data.strarr.push('一秀')
+      return '一秀';
     }
     if (four === 2 && one < 4 && two < 4 && three < 4 && five < 4 && six < 4) {
-      this.data.strarr.push('二举')
+      return '二举';
     }
     if (four === 3) {
-      this.data.strarr.push('三红')
+      return '三红';
     }
     if (two === 4 || three === 4 || one === 4 || five === 4 || six === 4) {
-      this.data.strarr.push('四进')
+      return '四进';
     }
     if (one == 1 && two == 2 && three == 1 && four == 2 && five == 1 && six == 2) {
-      this.data.strarr.push('对堂')
+      return '对堂';
     }
     if (four === 4 && one !== 2) {
-      this.data.strarr.push('状元')
+      return '状元';
     }
     if (five == 5 || three == 5 || two == 5 || one == 5 || six == 5) {
-      this.data.strarr.push('五子登科')
+      return '状元';
     }
     if (four == 5) {
-      this.data.strarr.push('五红')
+      return '状元';
     }
     if (six == 6 || five == 6 || three == 6 || two == 6) {
-      this.data.strarr.push('六杯黑')
+      return '状元';
     }
     if (one == 6) {
-      this.data.strarr.push('遍地锦')
+      return '状元';
     }
     if (four == 6) {
-      this.data.strarr.push('六杯红')
+      return '状元';
     }
     if (four == 4 && one == 2) {
-      this.data.strarr.push('金花')
+      return '状元';
     }
     if (four == 0 && one < 4 && two < 4 && four < 4 && five < 4 && six < 4 && three < 4) {
-      this.data.strarr.push('谢谢参与')
-    }
-    this.setData({
-      strarr: this.data.strarr
-    })
-  },
-
-  reload() {
-    if (this.data.count > 0) {
-      var
-        a = Math.floor(Math.random() * 6) + 1,
-        b = Math.floor(Math.random() * 6) + 1,
-        c = Math.floor(Math.random() * 6) + 1,
-        d = Math.floor(Math.random() * 6) + 1,
-        e = Math.floor(Math.random() * 6) + 1,
-        f = Math.floor(Math.random() * 6) + 1;
-      var arr = [a, b, c, d, e, f]
-      this.setData({
-        a: a,
-        b: b,
-        c: c,
-        d: d,
-        e: e,
-        f: f
-      })
-      this.setData({
-        one: this.oneNum(arr),
-        two: this.twoNum(arr),
-        three: this.threeNum(arr),
-        four: this.fourNum(arr),
-        five: this.fiveNum(arr),
-        six: this.sixNum(arr)
-      })
-      var temp = this.data.count - 1;
-
-      this.setData({
-        count: temp
-      })
-      this.Def_bobing()
-    } else {
-      this.setData({
-        recode: false
-      })
+      return '谢谢参与';
     }
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+  // 将写好的define bobing函数传入
+  countbing(n) {
+
+    if (n == '一秀') {
+      if (this.data.yixiu != 0) {
+        var temp = this.data.yixiu - 1
+        this.setData({
+          yixiu: temp
+        })
+      }
+    }
+
+    if (n == '二举') {
+      if (this.data.erju != 0) {
+        var temp = this.data.erju - 1
+        this.setData({
+          erju: temp
+        })
+      }
+    }
+
+    if (n == '三红') {
+      if (this.data.sanhong != 0) {
+        var temp = this.data.sanhong - 1
+        this.setData({
+          sanhong: temp
+        })
+      }
+
+    }
+
+    if (n == '四进') {
+      if (this.data.sijin != 0) {
+        var temp = this.data.sijin - 1
+        this.setData({
+          sijin: temp
+        })
+      }
+    }
+
+    if (n == '对堂') {
+      if (this.data.duitang != 0) {
+        var temp = this.data.duitang - 1
+        this.setData({
+          duitang: temp
+        })
+      }
+    }
+    if (n == '状元') {
+      if (this.data.zhuangyuan != 0) {
+        var temp = this.data.zhuangyuan - 1
+        this.setData({
+          zhuangyuan: temp
+        })
+      }
+    }
+  },
+
+  random() {
     var
       a = Math.floor(Math.random() * 6) + 1,
       b = Math.floor(Math.random() * 6) + 1,
@@ -200,8 +230,72 @@ Page({
       five: this.fiveNum(arr),
       six: this.sixNum(arr),
     })
-    this.Def_bobing()
   },
+
+  sumbing() {
+    var sum = this.data.yixiu + this.data.erju + this.data.sanhong + this.data.sijin + this.data.duitang + this.data.zhuangyuan
+    return sum;
+  },
+
+  write(n, bobing) {
+    if (n == 1) {
+      this.data.gamerarr1.push(bobing)
+    }
+    if (n == 2) {
+      this.data.gamerarr2.push(bobing)
+    }
+    if (n == 3) {
+      this.data.gamerarr3.push(bobing)
+    }
+    if (n == 4) {
+      this.data.gamerarr4.push(bobing)
+    }
+    if (n == 5) {
+      this.data.gamerarr5.push(bobing)
+    }
+    if (n == 6) {
+      this.data.gamerarr6.push(bobing)
+    }
+
+  },
+
+  reload() {
+    //重新摇色子
+    this.random()
+    var bobing = this.Def_bobing();//计算博饼大小
+    this.countbing(bobing)//计算奖池
+    this.write(this.data.Gamernum, bobing)
+    //终结逻辑
+    if (this.sumbing() != 0) {
+      // 玩家更替的逻辑
+      if (this.data.Gamernum < this.data.Gamernumc) {
+        var temp = this.data.Gamernum + 1
+        this.setData({
+          Gamernum: temp,
+        })
+      } else {
+        this.setData({
+          Gamernum : 1
+        })
+      }
+    } else {
+      this.setData({
+        recode: false
+      })
+    }
+
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    this.setData({
+      Gamernumc: app.globalData.People,
+    })
+    
+  },
+
 
 
 
@@ -252,5 +346,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
 })
