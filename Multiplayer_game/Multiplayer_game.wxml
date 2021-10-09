@@ -1,6 +1,6 @@
 <view class="root">
   <image class='background-image' src='background.png' mode="aspectFill"></image>
-  <view class="content" style="position:relative;">
+  <view class="content" style="position: relative; left: 0rpx; top: 0rpx">
   
     <button
       style="position: relative; left: 182rpx; top: 1330rpx; width: 214rpx; height: 80rpx; display: block; box-sizing: border-box"
@@ -38,7 +38,7 @@
       src="action.gif" />
   
     <button
-      style="position: relative; left: -165rpx; top: 1133rpx; width: 214rpx; height: 80rpx; display: block; box-sizing: border-box"
+      style="position: relative; left: -187rpx; top: 443rpx; width: 214rpx; height: 80rpx; display: block; box-sizing: border-box"
       bindtap="to_chat" plain="{{ true }}">聊天</button>
   
   
