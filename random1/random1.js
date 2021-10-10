@@ -138,8 +138,12 @@ Page({
       four = this.data.four,
       five = this.data.five,
       six = this.data.six
-    if (four === 1 && one + two + three + four + five + six != 21 && one < 4 && two < 4 && three < 4 && five < 4 && six < 4) {
-      return '一秀';
+    if (four === 1 && one < 4 && two < 4 && three < 4 && five < 4 && six < 4) {
+      if (one == 1 && two == 1 && three == 1 && four == 1 && five == 1 && six == 1) {
+        return '对堂';
+      }else{
+        return '一秀';
+      }
     }
     if (four === 2 && one < 4 && two < 4 && three < 4 && five < 4 && six < 4) {
       return '二举';
@@ -149,9 +153,6 @@ Page({
     }
     if (two === 4 || three === 4 || one === 4 || five === 4 || six === 4) {
       return '四进';
-    }
-    if (one == 1 && two == 2 && three == 1 && four == 2 && five == 1 && six == 2) {
-      return '对堂';
     }
     if (four === 4 && one !== 2) {
       return '状元';
